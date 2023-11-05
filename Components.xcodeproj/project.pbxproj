@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */; };
 		638C45D22AF7C459003E312C /* ComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C45D12AF7C459003E312C /* ComponentsApp.swift */; };
 		638C45D62AF7C45B003E312C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C45D52AF7C45B003E312C /* Assets.xcassets */; };
 		638C45D92AF7C45B003E312C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C45D82AF7C45B003E312C /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		638C45CE2AF7C459003E312C /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638C45D12AF7C459003E312C /* ComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsApp.swift; sourceTree = "<group>"; };
 		638C45D52AF7C45B003E312C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				638C45E62AF7C4B0003E312C /* GradientButton.swift */,
 				638C45E72AF7C4B0003E312C /* Login.swift */,
 				638C45E82AF7C4B0003E312C /* Signup.swift */,
+				6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */,
 				638C45FB2AF7C519003E312C /* ContentView.swift */,
 			);
 			path = View;
@@ -209,6 +212,7 @@
 				638C45EA2AF7C4B0003E312C /* GradientButton.swift in Sources */,
 				638C45F72AF7C4D6003E312C /* ContentView1.swift in Sources */,
 				638C45D22AF7C459003E312C /* ComponentsApp.swift in Sources */,
+				6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */,
 				638C45EE2AF7C4BA003E312C /* View+Extensions.swift in Sources */,
 				638C45EB2AF7C4B0003E312C /* Login.swift in Sources */,
 			);
