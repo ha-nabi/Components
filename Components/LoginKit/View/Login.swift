@@ -15,7 +15,9 @@ struct Login: View {
     @State private var showForgotPasswordView: Bool = false
     // Reset Password View (with New Password and Confimration Password View)
     @State private var showResetView: Bool = false
-
+    // Optional, Present If you want to ask OTP for login
+    @State private var askOtp: Bool = false
+    @State private var otpText: String = ""
 
     var body: some View {
         VStack(alignment: .leading, spacing: 15, content: {
@@ -49,7 +51,8 @@ struct Login: View {
                 
                 // Login Button
                 GradientButton(title: "Login", icon: "arrow.right") {
-                    
+                    // YOUR CODE
+                    askOtp.toggle()
                 }
                 .hSpacing(.trailing)
                 // Disabling Until the Data is Entered
@@ -75,6 +78,7 @@ struct Login: View {
         .padding(.vertical, 15)
         .padding(.horizontal, 25)
         .toolbar(.hidden, for: .navigationBar)
+        // Asking Email ID For Sending Reset Link
         .sheet(isPresented: $showForgotPasswordView, content: {
             if #available(iOS 16.4, *) {
                 // Since i wanted a Custom Sheet Coner Radius
@@ -84,6 +88,30 @@ struct Login: View {
             } else {
                 ForgotPassword(showResetView: $showResetView)
                     .presentationDetents([.height(300)])
+            }
+        })
+        // Resetting New Password
+        .sheet(isPresented: $showResetView, content: {
+            if #available(iOS 16.4, *) {
+                // Since i wanted a Custom Sheet Coner Radius
+                PasswordResetView()
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            } else {
+                PasswordResetView()
+                    .presentationDetents([.height(350)])
+            }
+        })
+        // OTP Prompt
+        .sheet(isPresented: $askOtp, content: {
+            if #available(iOS 16.4, *) {
+                // Since i wanted a Custom Sheet Coner Radius
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            } else {
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
             }
         })
     }

@@ -13,6 +13,9 @@ struct Signup: View {
     @State private var emailID: String = ""
     @State private var fullName: String = ""
     @State private var password: String = ""
+    // Optional, Present If you want to ask OTP for login
+    @State private var askOtp: Bool = false
+    @State private var otpText: String = ""
 
     var body: some View {
         VStack(alignment: .leading, spacing: 15, content: {
@@ -48,7 +51,8 @@ struct Signup: View {
         
                 // Sign Up Button
                 GradientButton(title: "Continue", icon: "arrow.right") {
-                    
+                    // YOUR CODE
+                    askOtp.toggle()
                 }
                 .hSpacing(.trailing)
                 // Disabling Until the Data is Entered
@@ -74,6 +78,18 @@ struct Signup: View {
         .padding(.vertical, 15)
         .padding(.horizontal, 25)
         .toolbar(.hidden, for: .navigationBar)
+        // OTP Prompt
+        .sheet(isPresented: $askOtp, content: {
+            if #available(iOS 16.4, *) {
+                // Since i wanted a Custom Sheet Coner Radius
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            } else {
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+            }
+        })
     }
 }
 
