@@ -11,6 +11,10 @@
 		6312B3C02AF7CC4900BCB516 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3BF2AF7CC4900BCB516 /* PasswordResetView.swift */; };
 		6312B3C22AF7CDE000BCB516 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3C12AF7CDE000BCB516 /* OTPView.swift */; };
 		6312B3C42AF7CEF900BCB516 /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3C32AF7CEF900BCB516 /* OTPVerificationView.swift */; };
+		6312B3C92AF9095900BCB516 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3C82AF9095900BCB516 /* Expense.swift */; };
+		6312B3CD2AF90AC500BCB516 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3CC2AF90AC500BCB516 /* Home.swift */; };
+		6312B3CF2AF90ADF00BCB516 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3CE2AF90ADF00BCB516 /* ContentView2.swift */; };
+		6312B3D12AF90DE000BCB516 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3D02AF90DE000BCB516 /* Card.swift */; };
 		638C45D22AF7C459003E312C /* ComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C45D12AF7C459003E312C /* ComponentsApp.swift */; };
 		638C45D62AF7C45B003E312C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C45D52AF7C45B003E312C /* Assets.xcassets */; };
 		638C45D92AF7C45B003E312C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C45D82AF7C45B003E312C /* Preview Assets.xcassets */; };
@@ -32,6 +36,10 @@
 		6312B3BF2AF7CC4900BCB516 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		6312B3C12AF7CDE000BCB516 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		6312B3C32AF7CEF900BCB516 /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
+		6312B3C82AF9095900BCB516 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		6312B3CC2AF90AC500BCB516 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6312B3CE2AF90ADF00BCB516 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		6312B3D02AF90DE000BCB516 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		638C45CE2AF7C459003E312C /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638C45D12AF7C459003E312C /* ComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsApp.swift; sourceTree = "<group>"; };
 		638C45D52AF7C45B003E312C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +68,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6312B3C52AF9092C00BCB516 /* CardScroll */ = {
+			isa = PBXGroup;
+			children = (
+				6312B3CA2AF90AA300BCB516 /* View */,
+				6312B3CB2AF90AA900BCB516 /* Model */,
+			);
+			path = CardScroll;
+			sourceTree = "<group>";
+		};
+		6312B3CA2AF90AA300BCB516 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6312B3CC2AF90AC500BCB516 /* Home.swift */,
+				6312B3CE2AF90ADF00BCB516 /* ContentView2.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6312B3CB2AF90AA900BCB516 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6312B3C82AF9095900BCB516 /* Expense.swift */,
+				6312B3D02AF90DE000BCB516 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		638C45C52AF7C459003E312C = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +114,7 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6312B3C52AF9092C00BCB516 /* CardScroll */,
 				638C45E42AF7C495003E312C /* SliderView */,
 				638C45E12AF7C47D003E312C /* LoginKit */,
 				638C45D12AF7C459003E312C /* ComponentsApp.swift */,
@@ -211,11 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6312B3CF2AF90ADF00BCB516 /* ContentView2.swift in Sources */,
 				638C45E92AF7C4B0003E312C /* CustomTF.swift in Sources */,
 				638C45F82AF7C4D6003E312C /* CustomCorners.swift in Sources */,
 				638C45FC2AF7C519003E312C /* ContentView.swift in Sources */,
 				638C45FA2AF7C4D6003E312C /* TapButton.swift in Sources */,
+				6312B3CD2AF90AC500BCB516 /* Home.swift in Sources */,
 				638C45EC2AF7C4B0003E312C /* Signup.swift in Sources */,
+				6312B3D12AF90DE000BCB516 /* Card.swift in Sources */,
 				6312B3C42AF7CEF900BCB516 /* OTPVerificationView.swift in Sources */,
 				638C45F92AF7C4D6003E312C /* HomeView.swift in Sources */,
 				638C45F62AF7C4D6003E312C /* SideView.swift in Sources */,
@@ -223,6 +262,7 @@
 				638C45F72AF7C4D6003E312C /* ContentView1.swift in Sources */,
 				638C45D22AF7C459003E312C /* ComponentsApp.swift in Sources */,
 				6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */,
+				6312B3C92AF9095900BCB516 /* Expense.swift in Sources */,
 				6312B3C22AF7CDE000BCB516 /* OTPView.swift in Sources */,
 				638C45EE2AF7C4BA003E312C /* View+Extensions.swift in Sources */,
 				638C45EB2AF7C4B0003E312C /* Login.swift in Sources */,
