@@ -96,7 +96,7 @@ struct Home: View {
                         
                         RoundedRectangle(cornerRadius: 30 * progress, style: .continuous)
                             .fill(scheme == .dark ? .black : .white)
-                            // Limiting Background Scroll below the header
+                            // 헤더 아래에 있는 배경 스크롤 제한 주기
                             .visualEffect { content, proxy in
                                 content
                                     .offset(y: backgroundLimitOffset(proxy))
@@ -120,7 +120,7 @@ struct Home: View {
         }
     }
     
-    // Background Limit Offset
+    // 배경 수치 조절
     func backgroundLimitOffset(_ proxy: GeometryProxy) -> CGFloat {
         let minY = proxy.frame(in: .scrollView).minY
         
@@ -171,7 +171,7 @@ struct Home: View {
                 .offset(y: progress * -25)
             }
             .offset(y: -offset)
-            // Moving til Top Value
+            // 상위 값까지 이동
             .offset(y: progress * -topValue)
         }
         .padding(.horizontal, 15)
@@ -201,7 +201,7 @@ struct Home: View {
     }
 }
 
-// Custom Scroll Target Behaviour
+// 커스텀 스크롤 동작
 // AKA scrollWillEndDragging in UIKit
 
 struct CustomScrollBehaviour: ScrollTargetBehavior {

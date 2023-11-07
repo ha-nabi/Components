@@ -40,10 +40,10 @@ struct OTPView: View {
         
                 // Sign Up Button
                 GradientButton(title: "Send Link", icon: "arrow.right") {
-                    // YOUR CODE
+                    // 코드 입력
                 }
                 .hSpacing(.trailing)
-                // Disabling Until the Data is Entered
+                // 데이터가 입력될 때까지 비활성화
                 .disableWithOpacity(otpText.isEmpty)
             }
             .padding(.top, 20)

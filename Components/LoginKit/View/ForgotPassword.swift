@@ -47,12 +47,12 @@ struct ForgotPassword: View {
                     Task {
                         dismiss()
                         try? await Task.sleep(for: .seconds(0))
-                        // Showing the Reset View
+                        // 재설정 보기를 표시
                         showResetView = true
                     }
                 }
                 .hSpacing(.trailing)
-                // Disabling Until the Data is Entered
+                // 데이터가 입력될 때까지 사용 안 함
                 .disableWithOpacity(emailID.isEmpty)
             }
             .padding(.top, 20)

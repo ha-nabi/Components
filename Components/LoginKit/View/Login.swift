@@ -78,7 +78,7 @@ struct Login: View {
         .padding(.vertical, 15)
         .padding(.horizontal, 25)
         .toolbar(.hidden, for: .navigationBar)
-        // Asking Email ID For Sending Reset Link
+        // 재설정 링크를 보내기 위한 이메일 링크 표시
         .sheet(isPresented: $showForgotPasswordView, content: {
             if #available(iOS 16.4, *) {
                 // Since i wanted a Custom Sheet Coner Radius
@@ -90,7 +90,7 @@ struct Login: View {
                     .presentationDetents([.height(300)])
             }
         })
-        // Resetting New Password
+        // 새 암호 재설정
         .sheet(isPresented: $showResetView, content: {
             if #available(iOS 16.4, *) {
                 // Since i wanted a Custom Sheet Coner Radius

@@ -15,7 +15,7 @@ struct OTPVerificationView: View {
     var body: some View {
         HStack(spacing: 0) {
             // OTP Text Boxes
-            // Change Count Based on your OTp Text Size
+            // OTP 텍스트 크기에 따라 개수 변경
             ForEach(0..<6, id:\.self) { index in
                 OTPTextBox(index)
             }

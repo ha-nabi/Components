@@ -19,15 +19,15 @@ struct CustomTF: View {
         HStack(alignment: .top, spacing: 8, content: {
             Image(systemName: sfIcon)
                 .foregroundStyle(iconTint)
-            // Since i Need Same Width to Align TextFields Equally
+            // 텍스트 필드를 동일하게 정렬하려면 동일한 너비가 필요함
                 .frame(width: 30)
-            // Slightly Bringing Down
+            // 살짝 다운시키기
                 .offset(y: 2)
             
             VStack(alignment: .leading, spacing: 8, content: {
                 if isPassword {
                     Group {
-                        // Revealing Password when users wants to show Password
+                        // 사용자가 암호를 표시할 때 암호를 표시
                         if showPassword {
                             TextField(hint, text: $value)
                         } else {
@@ -41,7 +41,7 @@ struct CustomTF: View {
                 Divider()
             })
             .overlay(alignment: .trailing) {
-                // Password Reveal Button
+                // 비밀번호 공개 버튼
                 if isPassword {
                     Button {
                         withAnimation {
