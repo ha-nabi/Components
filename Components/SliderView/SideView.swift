@@ -28,6 +28,7 @@ struct SideView: View {
                     TapButton(image: "house", title: "Main", selectedTitle: $selectedTitle, namespace: namespace)
                     TapButton(image: "square.and.pencil", title: "Memo", selectedTitle: $selectedTitle, namespace: namespace)
                     TapButton(image: "trash", title: "Delete", selectedTitle: $selectedTitle, namespace: namespace)
+                    
                 }
                 
                 Spacer()

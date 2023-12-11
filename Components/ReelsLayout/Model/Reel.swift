@@ -17,10 +17,11 @@ struct Reel: Identifiable {
 
 var reelsData: [Reel] = [
 
-    .init(videoID: "Real 1", authorName: "Reel 1"),
+    .init(videoID: "Reel 1", authorName: "Reel 1"),
     .init(videoID: "Reel 2", authorName: "Reel 2"),
     .init(videoID: "Reel 3", authorName: "Reel 3"),
     .init(videoID: "Reel 4", authorName: "Reel 4"),
-    .init(videoID: "Reel 5", authorName: "Reel 5")
+    .init(videoID: "Reel 5", authorName: "Reel 5"),
+    .init(videoID: "Reel 6", authorName: "")
 
 ]
