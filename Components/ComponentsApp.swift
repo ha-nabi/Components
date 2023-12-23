@@ -11,7 +11,7 @@ import SwiftUI
 struct ComponentsApp: App {
     var body: some Scene {
         WindowGroup {
-            ButtonView()
+            ThemeView()
         }
     }
 }
