@@ -27,6 +27,8 @@
 		637D3F912B31532F00640143 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D3F902B31532F00640143 /* Badge.swift */; };
 		637D3FC22B36D5B000640143 /* ThemeChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D3FC12B36D5B000640143 /* ThemeChangeView.swift */; };
 		637D3FC52B36DA4700640143 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D3FC42B36DA4700640143 /* ThemeView.swift */; };
+		6385A2F72B3AF8DE00E41403 /* TransparentBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A2F62B3AF8DE00E41403 /* TransparentBlur.swift */; };
+		6385A2F92B3AF93000E41403 /* Glassmorphism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A2F82B3AF93000E41403 /* Glassmorphism.swift */; };
 		6389C3AE2B052086001C156F /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C3AD2B052086001C156F /* ContentView3.swift */; };
 		6389C3B52B052268001C156F /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C3B42B052268001C156F /* Reel.swift */; };
 		6389C3B72B05240B001C156F /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C3B62B05240B001C156F /* Like.swift */; };
@@ -77,6 +79,8 @@
 		637D3F902B31532F00640143 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		637D3FC12B36D5B000640143 /* ThemeChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeView.swift; sourceTree = "<group>"; };
 		637D3FC42B36DA4700640143 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		6385A2F62B3AF8DE00E41403 /* TransparentBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentBlur.swift; sourceTree = "<group>"; };
+		6385A2F82B3AF93000E41403 /* Glassmorphism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glassmorphism.swift; sourceTree = "<group>"; };
 		6389C3AD2B052086001C156F /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
 		6389C3B42B052268001C156F /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 		6389C3B62B05240B001C156F /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
@@ -193,6 +197,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6385A2F52B3AF8C000E41403 /* Glassmorphism */ = {
+			isa = PBXGroup;
+			children = (
+				6385A2F62B3AF8DE00E41403 /* TransparentBlur.swift */,
+				6385A2F82B3AF93000E41403 /* Glassmorphism.swift */,
+			);
+			path = Glassmorphism;
+			sourceTree = "<group>";
+		};
 		6389C3AA2B052052001C156F /* ReelsLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +269,7 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6385A2F52B3AF8C000E41403 /* Glassmorphism */,
 				637D3F872B3151A200640143 /* Badge */,
 				637D3FC02B36D53F00640143 /* ThemeChanger */,
 				633FDFB32B2887E8008418C4 /* DarkLightMode */,
@@ -408,6 +422,7 @@
 				638C45FC2AF7C519003E312C /* ContentView.swift in Sources */,
 				631E93242B26A5A600130B48 /* CardView.swift in Sources */,
 				638C45FA2AF7C4D6003E312C /* TapButton.swift in Sources */,
+				6385A2F92B3AF93000E41403 /* Glassmorphism.swift in Sources */,
 				6312B3CD2AF90AC500BCB516 /* Home.swift in Sources */,
 				631E93202B269BB500130B48 /* CustomNavBar.swift in Sources */,
 				631E93222B26A57600130B48 /* VanDarView.swift in Sources */,
@@ -415,6 +430,7 @@
 				638C45EC2AF7C4B0003E312C /* Signup.swift in Sources */,
 				6312B3D12AF90DE000BCB516 /* Card.swift in Sources */,
 				6312B3C42AF7CEF900BCB516 /* OTPVerificationView.swift in Sources */,
+				6385A2F72B3AF8DE00E41403 /* TransparentBlur.swift in Sources */,
 				6389C3BD2B05284D001C156F /* CustomVideoPlayer.swift in Sources */,
 				637D3FC52B36DA4700640143 /* ThemeView.swift in Sources */,
 				6389C3AE2B052086001C156F /* ContentView3.swift in Sources */,
