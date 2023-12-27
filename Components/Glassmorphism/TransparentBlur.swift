@@ -22,7 +22,7 @@ struct TransparentBlur: UIViewRepresentable {
             if let backdropLayer = uiView.layer.sublayers?.first {
                 if removeAllFilters {
                     backdropLayer.filters = []
-                }else{
+                } else {
                     backdropLayer.filters?.removeAll(where: { filter in
                         String(describing: filter) != "gaussianBlur"
                         
