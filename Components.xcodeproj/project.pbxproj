@@ -59,6 +59,7 @@
 		638C45FA2AF7C4D6003E312C /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C45F52AF7C4D6003E312C /* TapButton.swift */; };
 		638C45FC2AF7C519003E312C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C45FB2AF7C519003E312C /* ContentView.swift */; };
 		63D277482B3E930C0064A7F1 /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D277472B3E930C0064A7F1 /* TextEffect.swift */; };
+		63D277822B403CB60064A7F1 /* StarShowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D277812B403CB60064A7F1 /* StarShowerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		638C45F52AF7C4D6003E312C /* TapButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapButton.swift; sourceTree = "<group>"; };
 		638C45FB2AF7C519003E312C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63D277472B3E930C0064A7F1 /* TextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
+		63D277812B403CB60064A7F1 /* StarShowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShowerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				63D277802B403CA40064A7F1 /* StarShower */,
 				63D277462B3E92DF0064A7F1 /* TextEffect */,
 				6385A3012B3C651700E41403 /* RealTimeClock */,
 				6385A2F52B3AF8C000E41403 /* Glassmorphism */,
@@ -361,6 +364,14 @@
 				63D277472B3E930C0064A7F1 /* TextEffect.swift */,
 			);
 			path = TextEffect;
+			sourceTree = "<group>";
+		};
+		63D277802B403CA40064A7F1 /* StarShower */ = {
+			isa = PBXGroup;
+			children = (
+				63D277812B403CB60064A7F1 /* StarShowerView.swift */,
+			);
+			path = StarShower;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +471,7 @@
 				6389C3BD2B05284D001C156F /* CustomVideoPlayer.swift in Sources */,
 				637D3FC52B36DA4700640143 /* ThemeView.swift in Sources */,
 				6389C3AE2B052086001C156F /* ContentView3.swift in Sources */,
+				63D277822B403CB60064A7F1 /* StarShowerView.swift in Sources */,
 				63D277482B3E930C0064A7F1 /* TextEffect.swift in Sources */,
 				638C45F92AF7C4D6003E312C /* HomeView.swift in Sources */,
 				638C45F62AF7C4D6003E312C /* SideView.swift in Sources */,
