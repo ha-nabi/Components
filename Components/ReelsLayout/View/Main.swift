@@ -54,7 +54,7 @@ struct Main: View {
             }
         })
         .overlay(alignment: .top, content: {
-            Text("Reels")
+            Text("PADO")
                 .font(.title3)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)

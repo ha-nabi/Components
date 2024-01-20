@@ -14,20 +14,7 @@ struct ComponentsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ZStack {
-                if show {
-                    SampleView()
-                } else {
-                    LunchSTA()
-                }
-            }
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    withAnimation {
-                        show = true
-                    }
-                }
-            }
+            CustomTab()
         }
     }
 }

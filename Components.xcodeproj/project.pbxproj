@@ -21,6 +21,9 @@
 		631E93202B269BB500130B48 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E931F2B269BB500130B48 /* CustomNavBar.swift */; };
 		631E93222B26A57600130B48 /* VanDarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E93212B26A57600130B48 /* VanDarView.swift */; };
 		631E93242B26A5A600130B48 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E93232B26A5A600130B48 /* CardView.swift */; };
+		632291322B58E5B0007C51D1 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632291312B58E5B0007C51D1 /* SwiftUIView.swift */; };
+		632291342B58FCCA007C51D1 /* SwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632291332B58FCCA007C51D1 /* SwiftUIView1.swift */; };
+		632291372B5BAFF8007C51D1 /* CustomTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632291362B5BAFF8007C51D1 /* CustomTab.swift */; };
 		633FDFB52B28895C008418C4 /* DLMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633FDFB42B28895C008418C4 /* DLMode.swift */; };
 		633FDFB72B28996B008418C4 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633FDFB62B28996B008418C4 /* ButtonView.swift */; };
 		637D3F892B3151B700640143 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D3F882B3151B700640143 /* BadgeBackground.swift */; };
@@ -83,6 +86,9 @@
 		631E931F2B269BB500130B48 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		631E93212B26A57600130B48 /* VanDarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanDarView.swift; sourceTree = "<group>"; };
 		631E93232B26A5A600130B48 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		632291312B58E5B0007C51D1 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		632291332B58FCCA007C51D1 /* SwiftUIView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView1.swift; sourceTree = "<group>"; };
+		632291362B5BAFF8007C51D1 /* CustomTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTab.swift; sourceTree = "<group>"; };
 		633FDFB42B28895C008418C4 /* DLMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLMode.swift; sourceTree = "<group>"; };
 		633FDFB62B28996B008418C4 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		637D3F882B3151B700640143 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				631E09762B4D02FC00D8B153 /* ImageParalax.swift */,
+				632291312B58E5B0007C51D1 /* SwiftUIView.swift */,
 			);
 			path = ImageParalax;
 			sourceTree = "<group>";
@@ -194,6 +201,14 @@
 				631E93232B26A5A600130B48 /* CardView.swift */,
 			);
 			path = CustomNavBar;
+			sourceTree = "<group>";
+		};
+		632291352B5BAFE8007C51D1 /* CustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				632291362B5BAFF8007C51D1 /* CustomTab.swift */,
+			);
+			path = CustomTabbar;
 			sourceTree = "<group>";
 		};
 		633FDFB32B2887E8008418C4 /* DarkLightMode */ = {
@@ -275,6 +290,7 @@
 				6389C3B82B052466001C156F /* Main.swift */,
 				6389C3BA2B0527F9001C156F /* ReelView.swift */,
 				6389C3BC2B05284D001C156F /* CustomVideoPlayer.swift */,
+				632291332B58FCCA007C51D1 /* SwiftUIView1.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +331,7 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				632291352B5BAFE8007C51D1 /* CustomTabbar */,
 				631E09752B4D02BD00D8B153 /* ImageParalax */,
 				631E09702B4BCF1E00D8B153 /* InstaGrid */,
 				63A24FB62B4834C0003E8F28 /* LunchSTA */,
@@ -518,6 +535,8 @@
 				6389C3AE2B052086001C156F /* ContentView3.swift in Sources */,
 				63D277822B403CB60064A7F1 /* StarShowerView.swift in Sources */,
 				63D277482B3E930C0064A7F1 /* TextEffect.swift in Sources */,
+				632291322B58E5B0007C51D1 /* SwiftUIView.swift in Sources */,
+				632291342B58FCCA007C51D1 /* SwiftUIView1.swift in Sources */,
 				638C45F92AF7C4D6003E312C /* HomeView.swift in Sources */,
 				638C45F62AF7C4D6003E312C /* SideView.swift in Sources */,
 				633FDFB52B28895C008418C4 /* DLMode.swift in Sources */,
@@ -532,6 +551,7 @@
 				631E09722B4BCF2B00D8B153 /* InstaGrid.swift in Sources */,
 				637D3F912B31532F00640143 /* Badge.swift in Sources */,
 				638C45D22AF7C459003E312C /* ComponentsApp.swift in Sources */,
+				632291372B5BAFF8007C51D1 /* CustomTab.swift in Sources */,
 				6389C3BB2B0527F9001C156F /* ReelView.swift in Sources */,
 				6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */,
 				6312B3C92AF9095900BCB516 /* Expense.swift in Sources */,
