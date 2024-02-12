@@ -18,11 +18,11 @@ struct Glassmorphism: View {
                     .cornerRadius(60)
                     .font(.system(size: 55))
                 
-               Text("RangSung")
+               Text("하나비")
                     .font(.system(size: 30))
                     .fontWeight(.bold)
                 
-                Text("@dearkang")
+                Text("@hanabi")
                     .foregroundStyle(.gray)
                     .fontWeight(.medium)
                     .font(.system(size: 20))

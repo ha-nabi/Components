@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct Album: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Album: Identifiable {
+    var id = UUID().uuidString
+    var albumName: String
+    var albumImage: String
+    var isLiked: Bool = false
 }
 
-#Preview {
-    Album()
-}
+var albums: [Album] = [
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1"),
+    Album(albumName: "pp1", albumImage: "pp1")
+]

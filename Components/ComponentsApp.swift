@@ -14,7 +14,7 @@ struct ComponentsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CustomTab()
+            RepresentableTextFieldView()
         }
     }
 }

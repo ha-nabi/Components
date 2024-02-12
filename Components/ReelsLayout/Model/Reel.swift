@@ -23,5 +23,4 @@ var reelsData: [Reel] = [
     .init(videoID: "Reel 4", authorName: "Reel 4"),
     .init(videoID: "Reel 5", authorName: "Reel 5"),
     .init(videoID: "Reel 6", authorName: "")
-
 ]

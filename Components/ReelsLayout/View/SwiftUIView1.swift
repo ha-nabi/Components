@@ -10,55 +10,67 @@ import SwiftUI
 struct SwiftUIView1: View {
     @State private var selectedTab = 0
     
+    init() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
-        TabView(selection: $selectedTab) {
-            ContentView3()
-                .tabItem {
-                    Image(selectedTab == 0 ? "Home_light" : "Home_gray")
-                        .resizable()
-                        .scaledToFit()
+        VStack {
+            TabView(selection: $selectedTab) {
+                ContentView3()
+                    .tabItem {
+                        Image(selectedTab == 0 ? "tab_home" : "tab_home_gray")
+                            
+                        Text("홈")
+                    }
+                    .onAppear { selectedTab = 0 }
+                    .tag(0)
+                
+                Text("검색")
+                    .tabItem {
+                        Image(selectedTab == 1 ? "tab_search" : "tab_search_gray")
                         
-                    Text("홈")
-                }
-                .onAppear { selectedTab = 0 }
-                .tag(0)
-            
-            Text("검색")
-                .tabItem {
-                    Image(selectedTab == 1 ? "Search_light" : "Search_gray")
-                        .scaledToFit()
-                    Text("검색")
-                }
-                .onAppear { selectedTab = 1 }
-                .tag(1)
-            Text("서핑")
-                .tabItem {
-                    Image(selectedTab == 2 ? "Add_square_light" : "Add_square_gray")
-                        .scaledToFit()
-                    Text("서핑")
-                }
-                .onAppear { selectedTab = 2 }
-                .tag(2)
-            Text("오늘 파도")
-                .tabItem {
-                    Image(selectedTab == 3 ? "Remove_light" : "Remove_gray")
-                        .scaledToFit()
-                    Text("오늘 파도")
-                }
-                .onAppear { selectedTab = 3 }
-                .tag(3)
-            Text("프로필")
-                .tabItem {
-                    Image(selectedTab == 4 ? "User_light" : "User_gray")
-                        .scaledToFit()
-                    Text("프로필")
-                }
-                .onAppear { selectedTab = 4 }
-                .tag(4)
-                .badge(10)
-            
+                        Text("검색")
+                    }
+                    .onAppear { selectedTab = 1 }
+                    .tag(1)
+                
+                Text("서핑")
+                    .tabItem {
+                        Text("")
+                        
+                        Image("tab_add")
+                    }
+                    .onAppear { selectedTab = 2 }
+                    .tag(2)
+                
+                Text("오늘 파도")
+                    .tabItem {
+                        Image(selectedTab == 3 ? "tab_todaypado" : "tab_todaypado_gray")
+                        
+                        Text("오늘 파도")
+                    }
+                    .onAppear { selectedTab = 3 }
+                    .tag(3)
+                
+                SpotifyView()
+                    .tabItem {
+                        Image(selectedTab == 4 ? "tab_profile" : "tab_profile_gray")
+                        
+                        Text("프로필")
+                    }
+                    .onAppear { selectedTab = 4 }
+                    .tag(4)
+                    .badge(10)
+                
+            }
+            .tint(.white)
         }
-        .tint(.white)
+        .frame(height: UIScreen.main.bounds.height) // 직접적으로 탭바의 높이를 설정함
     }
 }
 
