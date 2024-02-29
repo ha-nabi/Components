@@ -19,6 +19,7 @@ struct SpotifyView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
+            HeaderView()
             VStack(spacing: 0) {
                 PinnedHeaderView()
                 LazyVStack(pinnedViews: [.sectionHeaders]) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630565AB2B80D60B00653741 /* samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630565AA2B80D60B00653741 /* samples.swift */; };
 		6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */; };
 		6312B3C02AF7CC4900BCB516 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3BF2AF7CC4900BCB516 /* PasswordResetView.swift */; };
 		6312B3C22AF7CDE000BCB516 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3C12AF7CDE000BCB516 /* OTPView.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630565AA2B80D60B00653741 /* samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samples.swift; sourceTree = "<group>"; };
 		6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		6312B3BF2AF7CC4900BCB516 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		6312B3C12AF7CDE000BCB516 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				632291362B5BAFF8007C51D1 /* CustomTab.swift */,
+				630565AA2B80D60B00653741 /* samples.swift */,
 			);
 			path = CustomTabbar;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				638C45FC2AF7C519003E312C /* ContentView.swift in Sources */,
 				63A24FB82B4834E7003E8F28 /* LunchSTA.swift in Sources */,
 				631E93242B26A5A600130B48 /* CardView.swift in Sources */,
+				630565AB2B80D60B00653741 /* samples.swift in Sources */,
 				638C45FA2AF7C4D6003E312C /* TapButton.swift in Sources */,
 				6385A2F92B3AF93000E41403 /* Glassmorphism.swift in Sources */,
 				6312B3CD2AF90AC500BCB516 /* Home.swift in Sources */,
