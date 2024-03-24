@@ -16,6 +16,8 @@
 		6312B3CD2AF90AC500BCB516 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3CC2AF90AC500BCB516 /* Home.swift */; };
 		6312B3CF2AF90ADF00BCB516 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3CE2AF90ADF00BCB516 /* ContentView2.swift */; };
 		6312B3D12AF90DE000BCB516 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3D02AF90DE000BCB516 /* Card.swift */; };
+		6318F9102BB024A70041E262 /* HoldDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318F90F2BB024A70041E262 /* HoldDownButton.swift */; };
+		6318F9132BB024C10041E262 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318F9122BB024C10041E262 /* Point.swift */; };
 		631E09722B4BCF2B00D8B153 /* InstaGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E09712B4BCF2B00D8B153 /* InstaGrid.swift */; };
 		631E09742B4BCF7000D8B153 /* Exploregrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E09732B4BCF7000D8B153 /* Exploregrid.swift */; };
 		631E09772B4D02FC00D8B153 /* ImageParalax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E09762B4D02FC00D8B153 /* ImageParalax.swift */; };
@@ -87,6 +89,8 @@
 		6312B3CC2AF90AC500BCB516 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		6312B3CE2AF90ADF00BCB516 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		6312B3D02AF90DE000BCB516 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6318F90F2BB024A70041E262 /* HoldDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButton.swift; sourceTree = "<group>"; };
+		6318F9122BB024C10041E262 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		631E09712B4BCF2B00D8B153 /* InstaGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaGrid.swift; sourceTree = "<group>"; };
 		631E09732B4BCF7000D8B153 /* Exploregrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exploregrid.swift; sourceTree = "<group>"; };
 		631E09762B4D02FC00D8B153 /* ImageParalax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageParalax.swift; sourceTree = "<group>"; };
@@ -185,6 +189,23 @@
 				6312B3D02AF90DE000BCB516 /* Card.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6318F90E2BB0247F0041E262 /* LongPressButton */ = {
+			isa = PBXGroup;
+			children = (
+				6318F9112BB024AD0041E262 /* Helper */,
+				6318F9122BB024C10041E262 /* Point.swift */,
+			);
+			path = LongPressButton;
+			sourceTree = "<group>";
+		};
+		6318F9112BB024AD0041E262 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6318F90F2BB024A70041E262 /* HoldDownButton.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		631E09702B4BCF1E00D8B153 /* InstaGrid */ = {
@@ -353,6 +374,7 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6318F90E2BB0247F0041E262 /* LongPressButton */,
 				632711D12B75340500E8E59A /* RepresentableTextField */,
 				63A18F072B68B4B4008EC096 /* Spotify */,
 				632291352B5BAFE8007C51D1 /* CustomTabbar */,
@@ -559,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6318F9132BB024C10041E262 /* Point.swift in Sources */,
 				6312B3CF2AF90ADF00BCB516 /* ContentView2.swift in Sources */,
 				638C45E92AF7C4B0003E312C /* CustomTF.swift in Sources */,
 				633FDFB72B28996B008418C4 /* ButtonView.swift in Sources */,
@@ -611,6 +634,7 @@
 				6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */,
 				6312B3C92AF9095900BCB516 /* Expense.swift in Sources */,
 				63A18F0D2B68B4E8008EC096 /* Album.swift in Sources */,
+				6318F9102BB024A70041E262 /* HoldDownButton.swift in Sources */,
 				63A24FBC2B483A56003E8F28 /* SampleView.swift in Sources */,
 				637D3F8D2B3152E300640143 /* BadgeSymbol.swift in Sources */,
 				6312B3C22AF7CDE000BCB516 /* OTPView.swift in Sources */,
