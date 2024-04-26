@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView1: View {
+struct SliderView: View {
     //@State는 상위 뷰에 선언하고 하위뷰에서 @Binding, State에 디폴트 값을 설정
     @State var selectedTitle = "Main"
     @State var showSide = false
@@ -93,10 +93,6 @@ struct ContentView1: View {
         )
         
     }
-}
-
-#Preview {
-    ContentView1()
 }
 
 extension View {

@@ -49,7 +49,3 @@ struct TapButton: View {
         )
     }
 }
-
-#Preview {
-    ContentView1()
-}

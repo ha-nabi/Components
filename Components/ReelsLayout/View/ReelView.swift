@@ -128,7 +128,3 @@ struct ReelView: View {
         .padding(.bottom, safeArea.bottom + 15)
     }
 }
-
-#Preview {
-    ContentView3()
-}

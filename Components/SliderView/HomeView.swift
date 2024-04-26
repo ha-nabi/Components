@@ -24,11 +24,6 @@ struct HomeView: View {
         .frame(width: getRect().width)
     }
 }
-
-#Preview {
-    ContentView1()
-}
-
 struct MainView: View {
     var body: some View {
         ZStack {

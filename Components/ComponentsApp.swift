@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct ComponentsApp: App {
-    
-    @State var show = false
-    
     var body: some Scene {
         WindowGroup {
-            RepresentableTextFieldView()
+            ContentView()
         }
     }
 }

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct LunchSTA: View {
-    
     @State var show = false
+    
     let title = "PADO"
+    
     private var initialDelays = [0.0, 0.04, 0.012, 0.18, 0.28, 0.35]
     
     var body: some View {

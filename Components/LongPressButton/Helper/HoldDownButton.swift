@@ -36,8 +36,6 @@ struct HoldDownButton: View {
                     GeometryReader {
                         let size = $0.size
                         
-                       
-                        
                         if !isCompleted {
                             Rectangle()
                                 .fill(loadingTint)
@@ -105,8 +103,4 @@ struct HoldDownButton: View {
         timerCount = 0
         
     }
-}
-
-#Preview {
-    Point()
 }

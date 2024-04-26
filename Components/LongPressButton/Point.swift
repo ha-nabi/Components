@@ -29,6 +29,7 @@ struct Point: View {
             }
             .padding()
             .navigationTitle("Hold Down Button")
+            .toolbarTitleDisplayMode(.automatic)
         }
     }
 }

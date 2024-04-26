@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct TextEffect: View {
-    
     let text: String
-    @State private var displayedCharacters = ""
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    
+    @State private var displayedCharacters = ""
 
     var body: some View {
         Text(displayedCharacters)
             .font(Font.custom("Bebas Neue", size: 45))
-
             .bold()
             .onReceive(timer) { _ in
                 if displayedCharacters.count < text.count {

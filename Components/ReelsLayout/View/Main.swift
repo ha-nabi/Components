@@ -71,7 +71,3 @@ struct Main: View {
         .environment(\.colorScheme, .dark)
     }
 }
-
-#Preview {
-    ContentView3()
-}

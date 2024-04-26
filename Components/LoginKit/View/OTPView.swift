@@ -56,7 +56,3 @@ struct OTPView: View {
         .interactiveDismissDisabled()
     }
 }
-
-#Preview {
-    ContentView()
-}

@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CustomTab: View {
-    
     @State var show = 0
     @State var title = ["홈", "검색", "서핑", "오늘 파도", "프로필"]
     @State var image = ["tab_home", "tab_search", "tab_todaypado", "tab_todaypado", "tab_profile"]
+    
     var body: some View {
         ZStack {
             Color.tabView.ignoresSafeArea()

@@ -132,7 +132,6 @@ struct Home: View {
     func CardView(_ card: Card) -> some View {
         GeometryReader {
             let rect = $0.frame(in: .scrollView(axis: .vertical))
-            let minY = rect.minY
             let topValue: CGFloat = 75.0
             
             let offset = min(rect.minY - 75, 0)
@@ -210,8 +209,4 @@ struct CustomScrollBehaviour: ScrollTargetBehavior {
             target.rect = .zero
         }
     }
-}
-
-#Preview {
-    ContentView2()
 }

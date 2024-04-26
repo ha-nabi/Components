@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ImageParalax: View {
-    
     @State var ValueTranslation: CGSize = .zero
     @State var isDragging = false
     

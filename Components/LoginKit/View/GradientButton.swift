@@ -25,7 +25,3 @@ struct GradientButton: View {
         })
     }
 }
-
-#Preview {
-    ContentView()
-}

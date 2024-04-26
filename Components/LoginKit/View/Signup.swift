@@ -77,7 +77,6 @@ struct Signup: View {
         })
         .padding(.vertical, 15)
         .padding(.horizontal, 25)
-        .toolbar(.hidden, for: .navigationBar)
         // OTP Prompt
         .sheet(isPresented: $askOtp, content: {
             if #available(iOS 16.4, *) {
@@ -91,8 +90,4 @@ struct Signup: View {
             }
         })
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView3: View {
+struct ReelsLayout: View {
     var body: some View {
         GeometryReader {
             let size = $0.size
@@ -17,8 +17,4 @@ struct ContentView3: View {
                 .ignoresSafeArea(.container, edges: .all)
         }
     }
-}
-
-#Preview {
-    ContentView3()
 }

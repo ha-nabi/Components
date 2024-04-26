@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AnimatedTitleView: View {
-    
     let title: String
     let color: Color
     let initialDelay: Double

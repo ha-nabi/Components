@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct Exploregrid: View {
-    
     let layoutImgStrings: [[String]]
     var spacing: CGFloat
     
     init(imgStrings: [String], spacing: CGFloat = 2) {
-        
         var layoutimgStrings = [[String]]()
         var tmp = [String]()
         
@@ -34,7 +32,6 @@ struct Exploregrid: View {
         self.spacing = spacing
     }
     
-    
     var body: some View {
         GeometryReader { reader in
             ScrollView(showsIndicators: false) {
@@ -43,7 +40,6 @@ struct Exploregrid: View {
                     let viewWidth: CGFloat = reader.size.width
                     
                     ForEach(layoutImgStrings.indices) { i in
-                        
                         let imgStrings = layoutImgStrings[i]
                         
                         if i % 3 != 2 || imgStrings.count < 3 {
@@ -63,13 +59,11 @@ struct Exploregrid: View {
 }
 
 struct layout1: View {
-    
     let imgStrings: [String]
     let viewWidth: CGFloat
     let spacing: CGFloat
     
     var body: some View {
-        
         let height:CGFloat = (viewWidth - (2 * spacing)) / 3
         
         return HStack(spacing: spacing) {
@@ -85,13 +79,11 @@ struct layout1: View {
 }
 
 struct layout2: View {
-    
     let imgStrings: [String]
     let viewWidth: CGFloat
     let spacing: CGFloat
     
     var body: some View {
-        
         let smallItemWidth: CGFloat = (viewWidth - (3 * spacing)) / 3
         let height: CGFloat = smallItemWidth * 2 + spacing
         
@@ -117,13 +109,11 @@ struct layout2: View {
 }
 
 struct layout3: View {
-    
     let imgStrings: [String]
     let viewWidth: CGFloat
     let spacing: CGFloat
     
     var body: some View {
-        
         let smallItemWidth: CGFloat = (viewWidth - (3 * spacing)) / 3
         let height: CGFloat = smallItemWidth * 2 + spacing
         

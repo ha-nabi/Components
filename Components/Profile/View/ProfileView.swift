@@ -1,5 +1,5 @@
 //
-//  Spotify.swift
+//  ProfileView.swift
 //  Components
 //
 //  Created by 강치우 on 1/30/24.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct SpotifyView: View {
-    @State var currentType: String = "파도"
-    @Namespace var animation
+struct ProfileView: View {
+    @State var currentType: String = "게시글"
     @State var _albums: [Album] = albums
-    
     @State var headerOffsets: (CGFloat, CGFloat) = (0, 0)
     @State var buttonOnOff: Bool = false
     
     let columns = [GridItem(.flexible(), spacing: 1), GridItem(.flexible(), spacing: 1), GridItem(.flexible())]
+    
+    @Namespace var animation
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -29,6 +29,7 @@ struct SpotifyView: View {
                 }
             }
         }
+        .background(.black)
     }
     
     @ViewBuilder
@@ -42,6 +43,7 @@ struct SpotifyView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: size.width, height: height > 0 ? height : 0, alignment: .top)
+                .cornerRadius(15)
                 .overlay {
                     ZStack(alignment: .bottom) {
                         LinearGradient(colors: [.clear, .black.opacity(0.8)], startPoint: .top, endPoint: .bottom)
@@ -61,9 +63,11 @@ struct SpotifyView: View {
                                     Text("강치우")
                                         .font(.system(size: 14))
                                         .fontWeight(.semibold)
+                                        .foregroundStyle(.white)
                                     
                                     Text("@hanabi")
                                         .font(.title.bold())
+                                        .foregroundStyle(.white)
                                 }
                                 
                                 Image(systemName: "checkmark.seal.fill")
@@ -74,44 +78,6 @@ struct SpotifyView: View {
                                             .padding(3)
                                     }
                                     .offset(y: -5)
-                                
-                                Spacer()
-                                
-//                                ZStack {
-//                                    RoundedRectangle(cornerRadius:4)
-//                                        .stroke(Color.white, lineWidth: 1)
-//                                        .frame(width: 80, height: 28)
-//                                    Text("프로필 편집")
-//                                        .font(.system(size: 12))
-//                                        .fontWeight(.medium)
-//                                        .foregroundStyle(.white)
-//                                }
-                                
-                                Button {
-                                    buttonOnOff.toggle()
-                                } label: {
-                                    if buttonOnOff {
-                                        ZStack {
-                                            RoundedRectangle(cornerRadius:6)
-                                                .stroke(Color.white, lineWidth: 1)
-                                                .frame(width: 70, height: 28)
-                                            Text("팔로잉")
-                                                .font(.system(size: 14))
-                                                .fontWeight(.medium)
-                                                .foregroundStyle(.white)
-                                        }
-                                    } else {
-                                        ZStack {
-                                            RoundedRectangle(cornerRadius:6)
-                                                .stroke(Color.blue, lineWidth: 1)
-                                                .frame(width: 70, height: 28)
-                                            Text("팔로우")
-                                                .font(.system(size: 14))
-                                                .fontWeight(.medium)
-                                                .foregroundStyle(.white)
-                                        }
-                                    }
-                                }
                             }
                                                        
                             HStack {
@@ -122,6 +88,7 @@ struct SpotifyView: View {
                                 } icon: {
                                     Text("0")
                                         .fontWeight(.semibold)
+                                        .foregroundStyle(.white)
                                 }
                                 .font(.caption)
                                 
@@ -132,6 +99,7 @@ struct SpotifyView: View {
                                 } icon: {
                                     Text("0")
                                         .fontWeight(.semibold)
+                                        .foregroundStyle(.white)
                                 }
                                 .font(.caption)
                                 
@@ -142,6 +110,7 @@ struct SpotifyView: View {
                                 } icon: {
                                     Text("0")
                                         .fontWeight(.semibold)
+                                        .foregroundStyle(.white)
                                 }
                                 .font(.caption)
                             }
@@ -155,38 +124,13 @@ struct SpotifyView: View {
                 }
                 .cornerRadius(0)
                 .offset(y: -minY)
-            
-            VStack {
-                HStack {
-                    Button {
-                        // dismiss
-                    } label: {
-                        Image(systemName: "arrow.left")
-                            .font(.system(size: 22))
-                    }
-                    
-                    Spacer()
-                    
-                    Button {
-                        // setting
-                    } label: {
-                        Image(systemName: "ellipsis")
-                            .font(.system(size: 22))
-                    }
-                }
-                .foregroundStyle(.white)
-                
-                Spacer()
-            }
-            .padding(.horizontal)
-            .padding(.top, 50)
         }
-        .frame(height: 300)
+        .frame(height: 200)
     }
     
     @ViewBuilder
     func PinnedHeaderView() -> some View {
-        let types: [String] = ["파도", "보낸 파도", "하이라이트"]
+        let types: [String] = ["게시글", "좋아요", "하이라이트"]
         HStack(spacing: 25) {
             ForEach(types, id: \.self) { type in
                 VStack(spacing: 12) {
@@ -205,7 +149,7 @@ struct SpotifyView: View {
                         }
                     }
                     .padding(.horizontal, 8)
-                    .frame(height: 2)
+                    .frame(height: 3)
                 }
                 .contentShape(Rectangle())
                 .onTapGesture {
@@ -216,16 +160,15 @@ struct SpotifyView: View {
             }
         }
         .padding(.horizontal)
-        .padding(.top, 25)
-        .padding(.bottom, 15)
+        .padding(.vertical, 5)
     }
     
     @ViewBuilder
     func PostList() -> some View {
         switch currentType {
-        case "파도":
+        case "게시글":
             PostView()
-        case "보낸 파도":
+        case "좋아요":
             WrittenPostsView()
         case "하이라이트":
             HighlightsView()
@@ -242,11 +185,6 @@ struct SpotifyView: View {
                     ZStack(alignment: .bottomLeading) {
                         Image("B12")
                             .resizable()
-                        
-                        Text("친구가 내 파도에 쓴 글")
-                            .foregroundStyle(.white)
-                            .font(.system(size: 14))
-                            .padding([.leading, .bottom], 5)
                     }
                     .frame(width: (UIScreen.main.bounds.width / 3) - 2, height: 160)
                 }
@@ -264,11 +202,6 @@ struct SpotifyView: View {
                     ZStack(alignment: .bottomLeading) {
                         Image("B11")
                             .resizable()
-                        
-                        Text("내가 친구 파도에 쓴 글")
-                            .foregroundStyle(.white)
-                            .font(.system(size: 14))
-                            .padding([.leading, .bottom], 5)
                     }
                     .frame(width: (UIScreen.main.bounds.width / 3) - 2, height: 160)
                 }
@@ -285,11 +218,6 @@ struct SpotifyView: View {
                     ZStack(alignment: .bottomLeading) {
                         Image("B14")
                             .resizable()
-                        
-                        Text("내가 좋아요 한 파도")
-                            .foregroundStyle(.white)
-                            .font(.system(size: 14))
-                            .padding([.leading, .bottom], 5)
                     }
                     .frame(width: (UIScreen.main.bounds.width / 3) - 2, height: 160)
                 }
@@ -300,5 +228,5 @@ struct SpotifyView: View {
 }
 
 #Preview {
-    SpotifyView()
+    ProfileView()
 }

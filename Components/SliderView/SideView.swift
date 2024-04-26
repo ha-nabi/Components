@@ -38,7 +38,3 @@ struct SideView: View {
         .frame(width: 240)
     }
 }
-
-#Preview {
-    ContentView1()
-}

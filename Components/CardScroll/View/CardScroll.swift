@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView2: View {
+struct CardScroll: View {
     var body: some View {
         Home()
     }
 }
 
 #Preview {
-    ContentView2()
+    CardScroll()
 }

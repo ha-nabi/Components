@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FlipClockNumberView: View {
-    
     var number: Int
     
     var body: some View {

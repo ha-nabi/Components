@@ -78,7 +78,6 @@ struct Login: View {
         })
         .padding(.vertical, 15)
         .padding(.horizontal, 25)
-        .toolbar(.hidden, for: .navigationBar)
         // 재설정 링크를 보내기 위한 이메일 링크 표시
         .sheet(isPresented: $showForgotPasswordView, content: {
             if #available(iOS 16.4, *) {
@@ -116,8 +115,4 @@ struct Login: View {
             }
         })
     }
-}
-
-#Preview {
-    ContentView()
 }
