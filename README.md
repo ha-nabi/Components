@@ -1,1 +1,1 @@
-SwiftUI를 하며 간간히 사용하기 좋은 애니메이션, 트랜지션, 예쁜 뷰를 정리합니다.
+SwiftUI를 하며 사용하기 좋은 Animation, Transition, View, Component를 정리합니다.
