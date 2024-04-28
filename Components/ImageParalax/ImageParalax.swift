@@ -29,7 +29,6 @@ struct ImageParalax: View {
                 .frame(width: 50, height: 50)
                 .blur(radius: 50)
                 .offset(x: ValueTranslation.width / 1.5, y: ValueTranslation.height / 1.5)
-            
         }
         .offset(x: ValueTranslation.width / 10, y: ValueTranslation.height / 10)
         .frame(width: 300, height: 400)

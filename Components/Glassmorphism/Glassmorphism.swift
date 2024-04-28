@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Glassmorphism: View {
-    
     var body: some View {
         VStack {
             VStack(spacing: 12) {

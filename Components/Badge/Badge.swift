@@ -31,7 +31,6 @@ struct Badge: View {
     }
 }
 
-
 #Preview {
     Badge()
 }

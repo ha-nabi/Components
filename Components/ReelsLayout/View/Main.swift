@@ -19,17 +19,16 @@ struct Main: View {
             LazyVStack(spacing: 0) {
                 ForEach($reels) { $reel in
                     ReelView(
-                        reel: $reel,
-                        likeCounter: $likedCounter,
                         size: size,
-                        safeArea: safeArea
+                        safeArea: safeArea,
+                        reel: $reel,
+                        likeCounter: $likedCounter
                     )
                     .frame(maxWidth: .infinity)
                     .containerRelativeFrame(.vertical)
                 }
             }
         }
-        
         .scrollIndicators(.hidden)
         .scrollTargetBehavior(.paging)
         .background(.black)

@@ -16,7 +16,6 @@ struct SideView: View {
         ZStack(alignment: .trailing) {
             Color.black.ignoresSafeArea()
             VStack {
-                
                 Text("SideView")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
@@ -25,10 +24,9 @@ struct SideView: View {
                 Spacer()
                 //SideTapButtom
                 VStack(spacing: 15) {
-                    TapButton(image: "house", title: "Main", selectedTitle: $selectedTitle, namespace: namespace)
-                    TapButton(image: "square.and.pencil", title: "Memo", selectedTitle: $selectedTitle, namespace: namespace)
-                    TapButton(image: "trash", title: "Delete", selectedTitle: $selectedTitle, namespace: namespace)
-                    
+                    TapButton(image: "house", title: "Main", namespace: namespace, selectedTitle: $selectedTitle)
+                    TapButton(image: "square.and.pencil", title: "Memo", namespace: namespace, selectedTitle: $selectedTitle)
+                    TapButton(image: "trash", title: "Delete", namespace: namespace, selectedTitle: $selectedTitle)
                 }
                 
                 Spacer()

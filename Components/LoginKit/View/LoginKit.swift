@@ -37,9 +37,7 @@ struct LoginKit: View {
                     CircleView()
                         .animation(.easeOut(duration: 0.3), value: showSignup)
                         .animation(.easeOut(duration: 0.3), value: isKeyboardShowing)
-                    
                 }
-                
             }
     }
     

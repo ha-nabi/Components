@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TapButton: View {
-    
     var image: String
     var title: String
-    @Binding var selectedTitle: String
     var namespace: Namespace.ID
+    
+    @Binding var selectedTitle: String
     
     var body: some View {
         Button(action: {

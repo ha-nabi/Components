@@ -11,6 +11,7 @@ struct GradientButton: View {
     var title: String
     var icon: String
     var onClick: () -> ()
+    
     var body: some View {
         Button(action: onClick, label: {
             HStack(spacing: 15) {

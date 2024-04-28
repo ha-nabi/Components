@@ -13,13 +13,12 @@ struct Star {
 }
 
 struct StarShowerView: View {
-    
-    @State private var stars: [Star] = []
-    
     let timer = Timer.publish(every: 0.01, on: .main, in: .common)
         .autoconnect()
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
+    
+    @State private var stars: [Star] = []
     
     var body: some View {
         Canvas { context, size in

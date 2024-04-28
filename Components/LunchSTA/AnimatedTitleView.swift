@@ -14,9 +14,11 @@ struct AnimatedTitleView: View {
     let animationType: Animation
     
     @State var scall = false
+    
     @State private var show = false
     
     private var delayStep = 0.1
+    
     init(title: String, color: Color, initialDelay: Double, animationType: Animation, scall: Bool = false, show: Bool = false, delayStep: Double = 0.1) {
         self.title = title
         self.color = color

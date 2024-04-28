@@ -11,13 +11,13 @@ struct ImageParalaxView: View {
     @State private var textPosition = CGPoint(x: 100, y: 100)
     @State private var dragStart: CGPoint?
     @State private var textLabel = "여기에 텍스트를 입력하세요"
-
+    
     var body: some View {
         ZStack {
             Image("pp1")
                 .resizable()
                 .scaledToFit()
-
+            
             Text(textLabel)
                 .foregroundColor(.white)
                 .padding(10)

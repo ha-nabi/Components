@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ButtonView: View {
-    
     @State private var appearanceMode: AppearanceMode = .dark
     @State private var colorScheme: ColorScheme? = nil
     @State var show = true

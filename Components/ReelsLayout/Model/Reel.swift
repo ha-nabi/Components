@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 // Reel Model & Sample Video Files
 struct Reel: Identifiable {
     var id: UUID = .init()
@@ -16,7 +15,6 @@ struct Reel: Identifiable {
 }
 
 var reelsData: [Reel] = [
-
     .init(videoID: "Reel 1", authorName: "Reel 1"),
     .init(videoID: "Reel 2", authorName: "Reel 2"),
     .init(videoID: "Reel 3", authorName: "Reel 3"),

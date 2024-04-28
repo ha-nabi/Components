@@ -13,7 +13,9 @@ struct CustomTF: View {
     var hint: String
     // Hides TextField
     var isPassword: Bool = false
+    
     @Binding var value: String
+    
     @State private var showPassword: Bool = false
     var body: some View {
         HStack(alignment: .top, spacing: 8, content: {

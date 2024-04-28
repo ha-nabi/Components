@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CustomNavBar: View {
-    
     @State var isScroll: Bool = false
     
     var body: some View {
@@ -47,7 +46,6 @@ struct CustomNavBar: View {
             Color.clear.preference(key: scrollPreKey.self, value: proxy.frame(in: .named("scroll")).minY)
         }
     }
-    
 }
 
 #Preview {

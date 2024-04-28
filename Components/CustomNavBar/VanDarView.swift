@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VanDarView: View {
     @Binding var isScroll: Bool
+    
     var body: some View {
         ZStack {
             Color.clear

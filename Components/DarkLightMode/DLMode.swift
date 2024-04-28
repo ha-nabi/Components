@@ -95,7 +95,6 @@ enum AppearanceMode {
     case dark, light, system
 }
 
-
 struct UIButton: View {
     var mode: AppearanceMode
     @Binding var currentMode: AppearanceMode

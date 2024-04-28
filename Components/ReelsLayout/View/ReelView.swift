@@ -10,13 +10,15 @@ import AVKit
 
 // Reel View
 struct ReelView: View {
-    @Binding var reel: Reel
-    @Binding var likeCounter: [Like]
     var size: CGSize
     var safeArea: EdgeInsets
+    
+    @Binding var reel: Reel
+    @Binding var likeCounter: [Like]
     // View Properties
     @State private var player: AVPlayer?
     @State private var looper: AVPlayerLooper?
+    
     var body: some View {
         GeometryReader {
             let rect = $0.frame(in: .scrollView(axis: .vertical))

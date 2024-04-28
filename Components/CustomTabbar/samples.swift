@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct samples: View {
-    
     @State var width = UIScreen.main.bounds.width
     @State var menu = "suggestions"
     

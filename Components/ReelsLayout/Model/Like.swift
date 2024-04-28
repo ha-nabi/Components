@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 // Like Animation Model
 struct Like: Identifiable {
     var id: UUID = .init()

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 // Card Model and Sample Cards
 struct Card: Identifiable {
     var id: UUID = .init()

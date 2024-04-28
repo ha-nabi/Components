@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct Home: View {
+    // Environment Values
+    @Environment(\.colorScheme) private var scheme
     // View Properties
     @State private var allExpenses: [Expense] = []
     @State private var activeCard: UUID?
-    // Environment Values
-    @Environment(\.colorScheme) private var scheme
+    
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing: 0) {
@@ -25,7 +26,6 @@ struct Home: View {
                     GeometryReader {
                         let rect = $0.frame(in: .scrollView)
                         let minY = rect.minY.rounded()
-                        
                         // Card View
                         ScrollView(.horizontal) {
                             LazyHStack(spacing: 0) {
@@ -138,7 +138,6 @@ struct Home: View {
             let progress = max(min(-offset / topValue, 1), 0)
             let scale: CGFloat = 1 + progress
             
-            
             ZStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(card.bgColor)
@@ -199,10 +198,8 @@ struct Home: View {
         .padding(.vertical, 6)
     }
 }
-
 // 커스텀 스크롤 동작
 // AKA scrollWillEndDragging in UIKit
-
 struct CustomScrollBehaviour: ScrollTargetBehavior {
     func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
         if target.rect.minY < 75 {

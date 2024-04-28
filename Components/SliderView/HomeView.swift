@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     @Binding var selectedTitle: String
     
     var body: some View {
-
         TabView(selection: $selectedTitle ) {
             MainView()
                 .tag("Main")
@@ -47,6 +45,7 @@ struct MemoView: View {
         .frame(width: getRect().width, alignment: .leading)
     }
 }
+
 struct DeleteView: View {
     var body: some View {
         ZStack {

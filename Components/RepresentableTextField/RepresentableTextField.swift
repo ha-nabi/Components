@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct RepresentableTextField: UIViewRepresentable {
-    /// 플레이스 홀더
     let placeHolderString: String
     let keyboardType: UIKeyboardType?
+    
     @Binding var text: String
     @Binding var isFocused: Bool
     

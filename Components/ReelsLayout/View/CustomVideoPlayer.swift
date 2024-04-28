@@ -10,6 +10,7 @@ import AVKit
 
 struct CustomVideoPlayer: UIViewControllerRepresentable {
     @Binding var player: AVPlayer?
+    
     func makeUIViewController(context: Context) -> AVPlayerViewController {
         let controller = AVPlayerViewController()
         controller.player = player

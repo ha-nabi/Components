@@ -91,14 +91,11 @@ struct SliderView: View {
                     }
                 }
         )
-        
     }
 }
 
 extension View {
-
     func getRect() -> CGRect {
-
         return UIScreen.main.bounds
     }
 }
