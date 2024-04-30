@@ -1,3 +1,10 @@
-SwiftUI를 하며 사용하기 좋은 Animation, Transition, View, Component를 정리합니다.
+## SwiftUI Component Set
 
-리스트로 보기 편하게 정리해놨으니 클론따서 빌드 한번씩 해보는걸 추천!
+SwiftUI를 하며 사용하기 좋은 `View`, `Animation`, `Component`를 정리합니다.
+
+각각의 View, Animation, Component 섹션 별로 정리해놨으니 한번씩 빌드 해보시는걸 추천드립니다.
+
+<br>
+
+## 실행화면
+![화면 기록 2024-04-28 오후 4 42 09](https://github.com/ha-nabi/Components/assets/112779139/8a5736ed-2025-4c47-8e67-51a2bba5f645)
