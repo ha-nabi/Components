@@ -42,6 +42,12 @@ struct ContentView: View {
                     } label: {
                         Text("ReelsLayout")
                     }
+                    
+                    NavigationLink {
+                        AutoScrollingTab()
+                    } label: {
+                        Text("AutoScrollingTab")
+                    }
                 } header: {
                     Text("View")
                 }
@@ -75,7 +81,7 @@ struct ContentView: View {
                     Text("Animation")
                 }
 
-                // MARK: Component
+                // MARK: Component Section
                 Section {
                     NavigationLink {
                         CustomNavBar()
