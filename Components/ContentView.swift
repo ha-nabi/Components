@@ -84,6 +84,12 @@ struct ContentView: View {
                 // MARK: Component Section
                 Section {
                     NavigationLink {
+                        CostomToasts()
+                    } label: {
+                        Text("CustomToasts")
+                    }
+                    
+                    NavigationLink {
                         CustomNavBar()
                     } label: {
                         Text("CustomNavBar")
@@ -147,6 +153,7 @@ struct ContentView: View {
                 }
             }
             .listStyle(.grouped)
+            .navigationTitle("Component")
         }
     }
 }
