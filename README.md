@@ -1,4 +1,4 @@
-## SwiftUI Component Set
+# SwiftUI Component Set
 
 SwiftUI를 하며 사용하기 좋은 `View`, `Animation`, `Component`를 정리합니다.
 
@@ -6,5 +6,63 @@ SwiftUI를 하며 사용하기 좋은 `View`, `Animation`, `Component`를 정리
 
 <br>
 
-## 실행화면
+## View Section
+```
+CustomProfile
+
+LoginKit
+
+SliderView
+
+CardScroll
+
+ReelsLayout
+
+AutoScrollingTab
+```
+
+<br>
+
+## Animation Section
+```
+ImageParalax
+
+TextEffect
+
+StarShower
+
+LunchSTA
+```
+
+<br>
+
+## Component Section
+```
+CustomToasts
+
+CustomNavBar
+
+DarkLightMode
+
+ThemeChanger
+
+Badge
+
+Glassmorphism
+
+RealTimeClock
+
+InstaGrid
+
+CustomTabbar
+
+RepresentableTextField
+
+LongPressButton
+```
+
+<br>
+
+# Preview
 ![화면 기록 2024-04-28 오후 4 42 09](https://github.com/ha-nabi/Components/assets/112779139/8a5736ed-2025-4c47-8e67-51a2bba5f645)
+
