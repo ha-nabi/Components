@@ -20,6 +20,12 @@ struct ContentView: View {
                     }
                     
                     NavigationLink {
+                        ImageViewer()
+                    } label: {
+                        Text("ImageViewer")
+                    }
+                    
+                    NavigationLink {
                         LoginKit()
                     } label: {
                         Text("LoginKit")
