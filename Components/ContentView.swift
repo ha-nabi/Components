@@ -61,6 +61,12 @@ struct ContentView: View {
                 // MARK: Animation Section
                 Section {
                     NavigationLink {
+                        AnimatedCharts()
+                    } label: {
+                        Text("AnimatedCharts")
+                    }
+                    
+                    NavigationLink {
                         ImageParalax()
                     } label: {
                         Text("ImageParalax")

@@ -27,6 +27,8 @@ AutoScrollingTab
 
 ## Animation Section
 ```
+AnimatedCharts
+                        
 ImageParalax
 
 TextEffect
