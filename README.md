@@ -27,6 +27,8 @@ AutoScrollingTab
 
 ## Animation Section
 ```
+BoomerangCards
+
 AnimatedCharts
                         
 ImageParalax
