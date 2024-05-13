@@ -61,6 +61,12 @@ struct ContentView: View {
                 // MARK: Animation Section
                 Section {
                     NavigationLink {
+                        BoomerangCards()
+                    } label: {
+                        Text("BoomerangCards")
+                    }
+                    
+                    NavigationLink {
                         AnimatedCharts()
                     } label: {
                         Text("AnimatedCharts")
