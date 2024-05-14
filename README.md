@@ -27,6 +27,8 @@ AutoScrollingTab
 
 ## Animation Section
 ```
+AnimatedSegmentedControl
+
 BoomerangCards
 
 AnimatedCharts
