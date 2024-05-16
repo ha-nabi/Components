@@ -61,6 +61,12 @@ struct ContentView: View {
                 // MARK: Animation Section
                 Section {
                     NavigationLink {
+                        AnimatedPageIndicator()
+                    } label: {
+                        Text("AnimatedPageIndicator")
+                    }
+                    
+                    NavigationLink {
                         AnimatedSegmentedControl()
                     } label: {
                         Text("AnimatedSegmentedControl")
