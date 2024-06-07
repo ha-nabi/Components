@@ -11,9 +11,9 @@ struct AnimatedPageIndicator: View {
     @State private var colors: [Color] = [.red, .blue, .green, .yellow]
     @State private var opacityEffect: Bool = false
     @State private var clipEdges: Bool = false
+    
     var body: some View {
         VStack {
-            /// Paging View
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 0) {
                     ForEach(colors, id: \.self) { color in
