@@ -46,7 +46,7 @@ LunchSTA
 
 <br>
 
-## Component Section
+## Components Section
 ```
 CustomToasts
 
