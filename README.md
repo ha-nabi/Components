@@ -6,7 +6,7 @@ SwiftUI를 하며 사용하기 좋은 `View`, `Animation`, `Component`를 정리
 
 <br>
 
-## View Section.
+## View Section
 ```
 CustomProfile
 
@@ -25,7 +25,7 @@ AutoScrollingTab
 
 <br>
 
-## Animation Section.
+## Animation Section
 ```
 AnimatedPageIndicator
                         
@@ -46,7 +46,7 @@ LunchSTA
 
 <br>
 
-## Components Section.
+## Components Section
 ```
 CustomToasts
 
