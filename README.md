@@ -69,6 +69,8 @@ CustomTabbar
 RepresentableTextField
 
 LongPressButton
+
+FloatingBottomSheet
 ```
 
 <br>
