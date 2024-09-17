@@ -61,6 +61,12 @@ struct ContentView: View {
                 // MARK: Animation Section
                 Section {
                     NavigationLink {
+                        ZoomTransition()
+                    } label: {
+                        Text("ZoomTransition")
+                    }
+                    
+                    NavigationLink {
                         AnimatedPageIndicator()
                     } label: {
                         Text("AnimatedPageIndicator")
