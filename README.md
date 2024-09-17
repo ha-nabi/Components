@@ -27,6 +27,8 @@ AutoScrollingTab
 
 ## Animation Section
 ```
+ZoomTransition
+
 AnimatedPageIndicator
                         
 AnimatedSegmentedControl
