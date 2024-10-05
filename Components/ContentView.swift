@@ -14,6 +14,12 @@ struct ContentView: View {
                 // MARK: View Section
                 Section {
                     NavigationLink {
+                        IntroView()
+                    } label: {
+                        Text("KeyframeAnimator")
+                    }
+                    
+                    NavigationLink {
                         ProfileView()
                     } label: {
                         Text("CustomProfile")
