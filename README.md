@@ -4,6 +4,10 @@ SwiftUI를 하며 사용하기 좋은 `View`, `Animation`, `Component`를 정리
 
 각각의 View, Animation, Component 섹션 별로 정리해놨으니 한번씩 빌드 해보시는걸 추천드립니다.
 
+This section organizes the best views, animations, and components to use when working with SwiftUI.
+
+I've organized each view, animation, and component section, so I recommend you build them one at a time.
+
 <br>
 
 ## View Section
