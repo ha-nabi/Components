@@ -96,6 +96,7 @@
 		63AC6BF22BF5F79F004EC50C /* AnimatedPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AC6BF12BF5F79F004EC50C /* AnimatedPageIndicator.swift */; };
 		63D277482B3E930C0064A7F1 /* TextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D277472B3E930C0064A7F1 /* TextEffect.swift */; };
 		63D277822B403CB60064A7F1 /* StarShowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D277812B403CB60064A7F1 /* StarShowerView.swift */; };
+		63DD15FE2CB23FA800E25616 /* DefaultSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DD15FD2CB23FA800E25616 /* DefaultSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +190,7 @@
 		63AC6BF12BF5F79F004EC50C /* AnimatedPageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPageIndicator.swift; sourceTree = "<group>"; };
 		63D277472B3E930C0064A7F1 /* TextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEffect.swift; sourceTree = "<group>"; };
 		63D277812B403CB60064A7F1 /* StarShowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShowerView.swift; sourceTree = "<group>"; };
+		63DD15FD2CB23FA800E25616 /* DefaultSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,6 +450,7 @@
 			children = (
 				638C45D12AF7C459003E312C /* ComponentsApp.swift */,
 				6324B3852BDBD6E400C45AB4 /* ContentView.swift */,
+				63DD15FB2CB23F8B00E25616 /* DefaultSettingView */,
 				635C71C32C9945FD00A2386B /* MatchedTransitionSource */,
 				63AC6BED2BF5F719004EC50C /* AnimatedPageIndicator */,
 				63AC6BE12BF41AE9004EC50C /* AnimatedSegmentedControl */,
@@ -690,6 +693,22 @@
 			path = StarShower;
 			sourceTree = "<group>";
 		};
+		63DD15FB2CB23F8B00E25616 /* DefaultSettingView */ = {
+			isa = PBXGroup;
+			children = (
+				63DD15FC2CB23F9500E25616 /* View */,
+			);
+			path = DefaultSettingView;
+			sourceTree = "<group>";
+		};
+		63DD15FC2CB23F9500E25616 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63DD15FD2CB23FA800E25616 /* DefaultSettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -775,6 +794,7 @@
 				638C45F82AF7C4D6003E312C /* CustomCorners.swift in Sources */,
 				637D3F8B2B3151DE00640143 /* HexagonParameters.swift in Sources */,
 				638C45FC2AF7C519003E312C /* LoginKit.swift in Sources */,
+				63DD15FE2CB23FA800E25616 /* DefaultSettingView.swift in Sources */,
 				63A24FB82B4834E7003E8F28 /* LunchSTA.swift in Sources */,
 				631E93242B26A5A600130B48 /* CardView.swift in Sources */,
 				630565AB2B80D60B00653741 /* samples.swift in Sources */,
