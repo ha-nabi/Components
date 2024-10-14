@@ -33,6 +33,8 @@ AutoScrollingTab
 
 ## Animation Section
 ```
+AppStoreView
+
 ZoomTransition
 
 AnimatedPageIndicator

@@ -67,6 +67,12 @@ struct ContentView: View {
                 // MARK: Animation Section
                 Section {
                     NavigationLink {
+                        AppStoreView()
+                    } label: {
+                        Text("AppStoreView")
+                    }
+
+                    NavigationLink {
                         ZoomTransition()
                     } label: {
                         Text("ZoomTransition")
