@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		630565AB2B80D60B00653741 /* samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630565AA2B80D60B00653741 /* samples.swift */; };
+		6307F5272D0AC6730029FEC0 /* BottomSheetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307F5262D0AC6730029FEC0 /* BottomSheetHelper.swift */; };
+		6307F5292D0AC6890029FEC0 /* BottomSheetTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307F5282D0AC6890029FEC0 /* BottomSheetTab.swift */; };
+		6307F52B2D0AC6AB0029FEC0 /* MapsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307F52A2D0AC6AB0029FEC0 /* MapsBottomSheet.swift */; };
 		6312B3BE2AF7C91700BCB516 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */; };
 		6312B3C02AF7CC4900BCB516 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3BF2AF7CC4900BCB516 /* PasswordResetView.swift */; };
 		6312B3C22AF7CDE000BCB516 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312B3C12AF7CDE000BCB516 /* OTPView.swift */; };
@@ -57,7 +60,6 @@
 		6389C3F42B053373001C156F /* Reel 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6389C3F02B053371001C156F /* Reel 3.mp4 */; };
 		6389C3F52B053373001C156F /* Reel 5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6389C3F12B053372001C156F /* Reel 5.mp4 */; };
 		6389C3F62B053373001C156F /* Reel 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6389C3F22B053373001C156F /* Reel 4.mp4 */; };
-		6389C3FA2B053432001C156F /* Reel 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6389C3F92B053432001C156F /* Reel 1.mp4 */; };
 		6389C3FD2B05422B001C156F /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389C3FC2B05422B001C156F /* OffsetKey.swift */; };
 		6389C3FF2B05A02B001C156F /* Reel 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6389C3FE2B05A02B001C156F /* Reel 6.mp4 */; };
 		638C45D22AF7C459003E312C /* ComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C45D12AF7C459003E312C /* ComponentsApp.swift */; };
@@ -103,6 +105,9 @@
 
 /* Begin PBXFileReference section */
 		630565AA2B80D60B00653741 /* samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samples.swift; sourceTree = "<group>"; };
+		6307F5262D0AC6730029FEC0 /* BottomSheetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHelper.swift; sourceTree = "<group>"; };
+		6307F5282D0AC6890029FEC0 /* BottomSheetTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTab.swift; sourceTree = "<group>"; };
+		6307F52A2D0AC6AB0029FEC0 /* MapsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsBottomSheet.swift; sourceTree = "<group>"; };
 		6312B3BD2AF7C91700BCB516 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		6312B3BF2AF7CC4900BCB516 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		6312B3C12AF7CDE000BCB516 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
@@ -152,7 +157,6 @@
 		6389C3F02B053371001C156F /* Reel 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel 3.mp4"; sourceTree = "<group>"; };
 		6389C3F12B053372001C156F /* Reel 5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel 5.mp4"; sourceTree = "<group>"; };
 		6389C3F22B053373001C156F /* Reel 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel 4.mp4"; sourceTree = "<group>"; };
-		6389C3F92B053432001C156F /* Reel 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel 1.mp4"; sourceTree = "<group>"; };
 		6389C3FC2B05422B001C156F /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
 		6389C3FE2B05A02B001C156F /* Reel 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Reel 6.mp4"; sourceTree = "<group>"; };
 		638C45CE2AF7C459003E312C /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +212,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6307F5232D0AC64B0029FEC0 /* MapsBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				6307F5252D0AC65A0029FEC0 /* Model */,
+				6307F5242D0AC6550029FEC0 /* Helpers */,
+				6307F52A2D0AC6AB0029FEC0 /* MapsBottomSheet.swift */,
+			);
+			path = MapsBottomSheet;
+			sourceTree = "<group>";
+		};
+		6307F5242D0AC6550029FEC0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6307F5262D0AC6730029FEC0 /* BottomSheetHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6307F5252D0AC65A0029FEC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6307F5282D0AC6890029FEC0 /* BottomSheetTab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6312B3C52AF9092C00BCB516 /* CardScroll */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,7 +425,6 @@
 				6389C3EF2B053370001C156F /* Reel 2.mp4 */,
 				6389C3F02B053371001C156F /* Reel 3.mp4 */,
 				6389C3F22B053373001C156F /* Reel 4.mp4 */,
-				6389C3F92B053432001C156F /* Reel 1.mp4 */,
 				6389C3F12B053372001C156F /* Reel 5.mp4 */,
 				6389C3FE2B05A02B001C156F /* Reel 6.mp4 */,
 				6389C3FB2B054205001C156F /* Keys */,
@@ -452,6 +481,7 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6307F5232D0AC64B0029FEC0 /* MapsBottomSheet */,
 				638C45D12AF7C459003E312C /* ComponentsApp.swift */,
 				6324B3852BDBD6E400C45AB4 /* ContentView.swift */,
 				63E0294D2CBD6174006ED572 /* AppStore */,
@@ -800,7 +830,6 @@
 				6389C3F42B053373001C156F /* Reel 3.mp4 in Resources */,
 				638C45D92AF7C45B003E312C /* Preview Assets.xcassets in Resources */,
 				6389C3FF2B05A02B001C156F /* Reel 6.mp4 in Resources */,
-				6389C3FA2B053432001C156F /* Reel 1.mp4 in Resources */,
 				6389C3F32B053373001C156F /* Reel 2.mp4 in Resources */,
 				6389C3F52B053373001C156F /* Reel 5.mp4 in Resources */,
 				638C45D62AF7C45B003E312C /* Assets.xcassets in Resources */,
@@ -820,6 +849,7 @@
 				63AC6BE42BF41B05004EC50C /* SegmentedControl.swift in Sources */,
 				638C45E92AF7C4B0003E312C /* CustomTF.swift in Sources */,
 				633FDFB72B28996B008418C4 /* ButtonView.swift in Sources */,
+				6307F5272D0AC6730029FEC0 /* BottomSheetHelper.swift in Sources */,
 				631E09742B4BCF7000D8B153 /* Exploregrid.swift in Sources */,
 				638C45F82AF7C4D6003E312C /* CustomCorners.swift in Sources */,
 				637D3F8B2B3151DE00640143 /* HexagonParameters.swift in Sources */,
@@ -862,6 +892,7 @@
 				633FDFB52B28895C008418C4 /* DLMode.swift in Sources */,
 				6324B3862BDBD6E400C45AB4 /* ContentView.swift in Sources */,
 				63A18F0B2B68B4D7008EC096 /* ProfileView.swift in Sources */,
+				6307F52B2D0AC6AB0029FEC0 /* MapsBottomSheet.swift in Sources */,
 				638C45EA2AF7C4B0003E312C /* GradientButton.swift in Sources */,
 				63A24FBA2B48366F003E8F28 /* AnimatedTitleView.swift in Sources */,
 				6385A3032B3C652E00E41403 /* Clock.swift in Sources */,
@@ -893,6 +924,7 @@
 				63AC6BC62BECB317004EC50C /* Download.swift in Sources */,
 				6312B3C22AF7CDE000BCB516 /* OTPView.swift in Sources */,
 				6324B3902BE0CF5A00C45AB4 /* AnimationEndCallBack.swift in Sources */,
+				6307F5292D0AC6890029FEC0 /* BottomSheetTab.swift in Sources */,
 				637D3F892B3151B700640143 /* BadgeBackground.swift in Sources */,
 				6324B3922BE0CF6A00C45AB4 /* Tab.swift in Sources */,
 				638C45EE2AF7C4BA003E312C /* View+Extensions.swift in Sources */,
