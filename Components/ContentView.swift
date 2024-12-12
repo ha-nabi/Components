@@ -14,6 +14,12 @@ struct ContentView: View {
                 // MARK: View Section
                 Section {
                     NavigationLink {
+                        MapsBottomSheet()
+                    } label: {
+                        Text("MapsBottomSheet")
+                    }
+
+                    NavigationLink {
                         DefaultSettingView()
                     } label: {
                         Text("DefaultSettingView")

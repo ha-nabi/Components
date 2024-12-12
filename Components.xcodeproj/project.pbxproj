@@ -481,9 +481,9 @@
 		638C45D02AF7C459003E312C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				6307F5232D0AC64B0029FEC0 /* MapsBottomSheet */,
 				638C45D12AF7C459003E312C /* ComponentsApp.swift */,
 				6324B3852BDBD6E400C45AB4 /* ContentView.swift */,
+				6307F5232D0AC64B0029FEC0 /* MapsBottomSheet */,
 				63E0294D2CBD6174006ED572 /* AppStore */,
 				63DD15FB2CB23F8B00E25616 /* DefaultSettingView */,
 				635C71C32C9945FD00A2386B /* MatchedTransitionSource */,
