@@ -12,6 +12,8 @@ I've organized each view, animation, and component section, so I recommend you b
 
 ## View Section
 ```
+MapsBottomSheet
+
 DefaultSettingView
 
 CustomProfile
