@@ -11,7 +11,7 @@ public struct ContentView: View {
     public var body: some View {
         NavigationStack {
             List {
-                // MARK: View Section
+                // MARK: - View Section
                 Section {
                     NavigationLink {
                         MapsBottomSheet()
@@ -70,7 +70,7 @@ public struct ContentView: View {
                     Text("View")
                 }
                 
-                // MARK: Animation Section
+                // MARK: - Animation Section
                 Section {
                     NavigationLink {
                         AppStoreView()
@@ -135,7 +135,7 @@ public struct ContentView: View {
                     Text("Animation")
                 }
 
-                // MARK: Component Section
+                // MARK: - Component Section
                 Section {
                     NavigationLink {
                         CostomToasts()
